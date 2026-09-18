@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bandera de México</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="panel">
+    <h1>Bandera de México</h1>
+
+    <section class="controls">
+      <div class="control">
+        <label for="greenColor">Esperanza</label>
+        <div class="slider-row">
+          <input type="range" id="greenColor" min="0" max="255" value="153">
+        </div>
+        <span id="greenHex">#009900</span>
+      </div>
+
+      <div class="control center-control">
+        <label>Unidad</label>
+        <span class="unit-hex">#FFFFFF</span>
+      </div>
+
+      <div class="control">
+        <label for="redColor">Sangre de nuestros héroes nacionales</label>
+        <div class="slider-row">
+          <input type="range" id="redColor" min="0" max="255" value="157">
+        </div>
+        <span id="redHex">#9D0000</span>
+      </div>
+    </section>
+
+    <section class="flag">
+      <div class="stripe green" id="greenStripe"></div>
+      
+      <div class="stripe white">
+        <div class="eagle-placeholder" aria-label="Águila del escudo">
+          <img class="coat-of-arms-image" 
+               src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Coat_of_arms_of_Mexico.svg" 
+               alt="Escudo Nacional de México">
+          <div>Ascencio Flores Javier Alessandro 24200765</div>
+          <div>Fernández Perez Ruben 242001348</div>
+          <div>Osorio Escamilla Juan David 24200827</div>
+        </div>
+      </div>
+
+      <div class="stripe red" id="redStripe"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
